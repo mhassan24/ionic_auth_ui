@@ -1,0 +1,71 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!-- <ion-navbar> -->
+    <ion-title>signup</ion-title>
+  <!-- </ion-navbar> -->
+
+</ion-header>
+
+<ion-content style="background-image:url('assets/imgs/we-are-mack-1400x600.png')" padding>
+ 
+  <div class="margin">
+    <h5>Create Your New Account</h5>
+    <img  src="assets/imgs/img_203160 copy.png" width="50" />
+  </div>
+ 
+  <ion-card style="background-color:transparent;box-shadow:none;border-radius:10px;margin-top:10px;height:260px;">
+
+    <ion-card-content>
+
+      <ion-list>
+        <ion-item style="background-color:white; opacity:0.5; border-radius:5px;">
+          <ion-label fixed>Username</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="user.username"></ion-input>
+              </ion-item><br>
+
+        <ion-item style="background-color:white; opacity:0.5; border-radius:5px;">
+          <ion-label fixed>Email</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="user.email"></ion-input>
+              </ion-item><br>
+
+
+                    <ion-item style="background-color:white; opacity:0.5; border-radius:5px;">
+        <ion-label fixed>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item><br>
+
+
+      </ion-list>
+      <button style="box-shadow:none;border-radius:10px; background-color:transparent; opacity:0.5; border: 1px solid white;margin-top:10px;" ion-button (click)="register(user)" >signup</button>
+    
+    <!-- <button style="box-shadow:none;border-radius:10px; background-color:transparent; opacity:0.5; border: 1px solid white;margin-top:20px;" [disabled]="!this.signupForm.valid" ion-button block (click)="Register()">Submit</button> -->
+
+  </ion-card-content>
+  </ion-card>
+
+
+      <!-- <ion-list>
+    
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    
+    </ion-list>
+    <button ion-button (click)="register(user)" >signup</button> -->
+        
+
+    <button style="box-shadow:none;border-radius:10px; background-color:transparent; opacity:0.5; border: 1px solid white" block ion-button (click)="login()">Login Now</button>
+  </ion-content>
+  
